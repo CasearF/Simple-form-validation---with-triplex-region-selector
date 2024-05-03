@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>地区选择器</title>
+    <script src="./ht.js"></script>
+    <script type="module" src="data.js"></script>
+    <script type="module" src="region.js"></script>
+    <link rel="stylesheet" href="./ht.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="registrationForm" action="#" method="get" onsubmit="return validateForm()">
+            <h2 style="text-align: center;color: #ffffff;">注册</h2>
+            <input type="text" id="name" name="name" autocomplete="given-name" placeholder="请输入用户名" autofocus><br>
+            <div class="error" id="nameError"></div><br>
+
+            <input type="email" id="email" name="email" autocomplete="given-name" placeholder="请输入邮箱" autofocus><br>
+            <div class="error" id="emailError"></div><br>
+
+            <input type="password" id="password" name="password" placeholder="请输入密码长度为" autofocus><br>
+            <div class="error" id="passwordError"></div><br>
+
+            <input type="password" id="passwordRepet" name="passwordRepet" placeholder="请再次输入密码" autofocus><br>
+            <div class="error" id="passwordRepetError"></div><br>
+
+            <input type="tel" id="PhoneNumber" name="PhoneNumber" placeholder="请输入手机号码" autofocus><br>
+            <div class="error" id="PhoneNumberError"></div><br>
+
+            <input type="date" id="Birthdate" name="Birthdate" placeholder="请输入出生日期" autofocus><br>
+            <div class="error" id="BirthdateError"></div><br>
+
+            <select id="province">
+                <option value="">请选择省份</option>
+                <!-- 省份选项将通过JavaScript动态生成 -->
+            </select>
+
+            <select id="city">
+                <option value="">请选择城市</option>
+                <!-- 城市选项将通过JavaScript动态生成 -->
+            </select>
+
+            <select id="district">
+                <option value="">请选择区/县</option>
+                <!-- 区/县选项将通过JavaScript动态生成 -->
+            </select>
+
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
